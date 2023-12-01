@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { getTrendingMovies } from '../api';
-import { MovieList } from '../components/MovieList';
+import { getTrendingMovies } from '../../api';
+import { MovieList } from '../../components/MovieList/MovieList';
 
 export default function HomePage() {
   const [movies, setmovies] = useState([]);

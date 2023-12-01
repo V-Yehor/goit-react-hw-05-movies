@@ -1,20 +1,21 @@
-import { NavLink, Outlet } from 'react-router-dom';
-import { GlobalStyle } from './GlobalStyle';
+import { Outlet } from 'react-router-dom';
+import { GlobalStyle } from '../GlobalStyle';
 import { Suspense } from 'react';
+import { AppList, StyledLink } from './AppLayout.styled';
 
 export const AppLayout = () => {
   return (
     <>
       <header>
         <nav>
-          <ul>
+          <AppList>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <StyledLink to="/">Home</StyledLink>
             </li>
             <li>
-              <NavLink to="/movies">Movies</NavLink>
+              <StyledLink to="/movies">Movies</StyledLink>
             </li>
-          </ul>
+          </AppList>
         </nav>
       </header>
       <main>

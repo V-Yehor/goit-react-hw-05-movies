@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { getMovieByQuery } from '../api';
-import { Form } from '../components/Form';
-import { MovieList } from 'components/MovieList';
+import { getMovieByQuery } from '../../api';
+import { Form } from '../../components/Form/Form';
+import { MovieList } from 'components/MovieList/MovieList';
 
 export default function MoviesPage() {
   const [movies, setmovies] = useState([]);
